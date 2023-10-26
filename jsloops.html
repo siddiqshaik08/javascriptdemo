@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h3 id="table"></h3>
+       <h3 id="loop"></h3>
+       <h3 id="stmt"></h3>
+       <h3 id="stmt1"></h3>
+
+    <script>
+       //for(let i=0;i<=10;i++){
+       //  document.getElementById('table').innerHTML=i;
+       //}
+
+       // if stmt
+       let i=4;
+       if(i>2){
+          document.getElementById('table').innerHTML="i value greater than 2";
+       }
+       
+       //while loop
+       let text=' ';
+       let j=1;
+       while(j<10){
+          text+= '</br>'+j;
+          j++;
+       }
+       document.getElementById('loop').innerHTML=text;
+       
+       //switch stmts
+       let color;
+       switch(2){
+         case 0:
+           color='blue';
+           break;
+        case 1:
+           color='red';
+           break;
+        case 2:
+           color='green';
+           break;
+        case 3:
+           color='purple';
+           break;
+        case 4:
+           color='yellow';
+           break;
+       }
+       document.getElementById('stmt').innerHTML=color;
+
+
+        //for loop using arrays
+        let access=' ';
+        const bikes=['ducati','kawasaki','royal enfield','bmw'];
+        for(let j=0;j<=bikes.length;j++){
+            access+=bikes[j]+'</br>';
+        }
+       
+        document.getElementById('stmt1').innerHTML= bikes.includes('bmw');
+
+        //break and continue stmts
+       /* let sum=' ';
+        for(let k=0;)
+       */
+
+    </script>
+</body>
+</html>

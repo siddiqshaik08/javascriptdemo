@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2 id="add"></h2>
+     <h2 id="arith2"></h2>
+     <h3 id="arith3"></h3>
+     <h3 id="arith4"></h3>
+     <h3 id="arith5"></h3>
+     <h3 id="arith6"></h3>
+     <h3 id="arith7"></h3>
+     <h3 id="arith8"></h3>
+     <h3 id="arith9"></h3>
+     <h3 id="arith10"></h3>
+     <h3 id="arith11"></h3>
+     <h3 id="arith12"></h3>
+     <h3 id="arith13"></h3>
+
+    <script>
+        // addition function
+       function addition(a,b){
+            return a + b;
+       }
+      let sum= addition(4,3);
+       document.getElementById('add').innerHTML='addition of 4 and 3 is'+' '+sum;
+      
+    //    subtract func
+       function subtract(c,d){
+            return c - d;
+       }
+        let sub=subtract(5,3);
+        document.getElementById('arith2').innerHTML='subtraction of 5 and 3 is'+' '+sub;
+
+        // multiply func
+        function multiply(e,f){
+            return e * f;
+        }
+        let mul=multiply(2,3);
+        document.getElementById('arith3').innerHTML='multiplication of 2 and 3 is'+' '+mul;
+
+        // division func
+        function division(g,h){
+            return g / h;
+        }
+        let div=division(4,2);
+        document.getElementById('arith4').innerHTML='division of 4 and 2 is'+' '+div;
+
+        // modus func
+        function modus(i,j){
+            return i % j;
+        }
+        let mod=modus(5,2);
+        document.getElementById('arith5').innerHTML='modus of 5 and 2 is'+' '+mod;
+
+        // exponential func
+        function expo(k,l){
+            return k ** l;
+        }
+        let exponen=expo(4,2);
+        document.getElementById('arith6').innerHTML='exponential of 4 and 2 is'+' '+exponen;
+
+        // comparison operators in single function
+        let m=4;
+        let n=8;
+        let o=m > n;
+        document.getElementById('arith7').innerHTML=''+o;
+
+        let p=m<n;
+        document.getElementById('arith8').innerHTML=''+p;
+
+        let q=m!=n;
+        document.getElementById('arith9').innerHTML=''+q;
+
+        let r=m===2+2;
+        document.getElementById('arith10').innerHTML=''+r;
+
+
+        // logical operators
+        let s= 4 & 3;
+        document.getElementById('arith11').innerHTML='logical and for 4 and 3 is'+' '+s;
+
+        let t=4|3;
+        document.getElementById('arith12').innerHTML='logical or for 4 and 3 is'+' '+t;
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

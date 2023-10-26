@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <h2 id='demo'></h2>
+    <h3 id="hi"></h3>
+    <h4 id="oper"></h4>
+    <h2 id="arr"></h2>
+    <h2 id="obj"></h2>
+    <h3 id="jsob"></h3>
+    <h3 id="dttm"></h3>
+    <p id="ocbtn"></p>
+    <h3 id="txtlen"></h3>
+    <p id="txtcolo" onclick="colortext()">click me so that color will change</p>
+  </div>
+   
+      <script>
+       
+         // prints the concatination of two strings
+         let x='siddiq shaik';
+        let y='associate software engineer';
+        let z=x + y;
+        document.getElementById('demo').innerHTML='hello iam'+ z;
+        document.getElementById("hi").innerText=x;
+
+        //function to multiply values
+        function multiply(a1,a2)
+        {
+            return a1*a2;
+        }
+        let b=multiply(2,4);
+        document.getElementById('oper').innerHTML=b;
+
+          //array example 
+        const pgmlang=["c","java",'c++'];
+        document.getElementById('arr').innerHTML=pgmlang[0]+", "+pgmlang[2];
+
+        //accessing objects
+        let person=
+        {
+          firstname:'siddiq',
+          lastname:'shaik',
+          id:1122233
+        };
+        document.getElementById('obj').innerHTML=person.firstname +person.lastname + person.id;
+        
+        //functions within objects
+        let num=
+        {
+          phone1:1,
+          phone2:4,
+          phone3:7,
+          mobile:function(){
+            return this.phone1+this.phone2+this.phone3;
+          }
+        };
+        document.getElementById('jsob').innerHTML=num.mobile();
+
+        // button event
+        /*function tnevent(){
+          document.getElementById('ocbtn').innerHTML='now button has clicked';
+         }*/
+         
+        // text color changed by clicking button
+        function colortext(){
+          document.getElementById('txtcolo').style.color="red";
+        }
+
+        // text length 
+        let text='responsive web design';
+        document.getElementById('txtlen').innerHTML='text length of string is'+ " "+text.length;
+
+        // writeln function
+        const pi=3.1415;
+        document.writeln(pi);
+
+ </script>     
+  <button onclick="document.getElementById('dttm').innerHTML=Date()">time</button>
+
+  <!-- print buttton -->
+  <button onclick="window.print()">print</button>
+   
+  <!-- <button onclick="tnevent">click it</button> -->
+</body>
+</html>

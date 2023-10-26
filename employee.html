@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 class="str">train code is</h3>
+    <ul>
+      
+    </ul>
+    <script>
+        const list=document.querySelector('.str ul');
+         list.innerHTML=" ";
+         const station=['MAN675847583748sjt567654;Manchester Piccadilly','VJK837027563829ht84937;vijayawada','KMT937294hfufjf839kjf;khammam'];
+          for(const i of station){
+            let input=station[i];
+            let code=input.slice(0,3);
+            let semindx=input.indexOf(';');
+            let name=input.slice(semindx+1);
+            let result= code + ":" + name;
+            // const ul=document.createElement('ul');
+            let listItem=document.createElement('li');
+            listItem.textContent=result;
+            ul.appendChild(listItem);
+            };
+    </script>
+</body>
+</html>
+<!--  -->

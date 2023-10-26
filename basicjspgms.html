@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <body>
+    
+       <h2 id='demo'></h2>
+       <h3 id="hi"></h3>
+       <h4 id="oper"></h4>
+    <script>
+        const pi=3.1415;
+        document.writeln(pi);
+       
+        // document.getElementById("demo").style.fontSize="35px";
+        // document.getElementById("demo").style.display="block"; 
+        // window.alert("inside alert box");
+
+
+        // prints the addition of two strings
+        let x='siddiq shaik';
+        let y='associate software engineer';
+        let z=x + y;
+        document.getElementById('demo').innerHTML=('hello iam'+z)
+
+        document.getElementById("hi").innerText=x;
+        //  using writeln to display some value
+        
+
+        //function to multipy values
+        function multiply(a1,a2){
+            return a1*a2;
+        }
+        let b=multiply(2,4);
+        document.getElementById('oper').innerHTML=b;
+        
+    <button onclick="window.print()">print</button>
+    </script>
+    
+        
+   </body>
+</html>
